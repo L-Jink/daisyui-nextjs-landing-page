@@ -17,7 +17,7 @@ function NavProfileLinks() {
         if (token) {
             dispatch(fetchUserDetail())
         }
-    }, [token])
+    }, [token, dispatch])
 
     const openLoginModal = () => {
         console.log("jere")

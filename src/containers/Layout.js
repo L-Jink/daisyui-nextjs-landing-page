@@ -28,7 +28,7 @@ export default function Layout({ children }) {
       dispatch(setToken(TOKEN))
       // getCurrentCredits()
     }
-  }, [])
+  }, [dispatch])
 
   return (
     <>
