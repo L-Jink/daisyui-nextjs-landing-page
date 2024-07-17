@@ -27,9 +27,8 @@ The following is the application structure.
 ```
 DAISYUI-NEXTJS-LANDING-PAGE
   - public
-    - images
-    - videos
-    - text
+    - media
+    - res
   - src
     - ...
 ```
