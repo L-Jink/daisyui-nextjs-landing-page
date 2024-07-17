@@ -1,5 +1,6 @@
 import { useState } from "react"
 import ShareIcon  from '@heroicons/react/24/outline/ShareIcon'
+import Image from 'next/image'
 
 
 function FeatureImageContainer({imageUrl}){
@@ -12,7 +13,10 @@ function FeatureImageContainer({imageUrl}){
     
     return(
         <div className="mt-6 ">
-            <img src={imageUrl} className="  h-5/6 object-contain w-full rounded-lg"/>
+            <Image
+            src={imageUrl}
+            className="  h-5/6 object-contain w-full rounded-lg"
+            />
         </div>
     )
     

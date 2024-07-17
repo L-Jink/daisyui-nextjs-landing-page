@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 const testimonialsData = [
     {text : "I wanted a website that truly represented my creative work and personality. Web Design AI perfectly captured my vision and designed a website that is not only beautiful but also unique. They were a pleasure to work with, and I'm proud to showcase my portfolio on the site they created for me.", name : "Emily, USA", profilePic : "https://plus.unsplash.com/premium_photo-1681319553238-9860299dfb0f?auto=format&fit=crop&q=80&w=2831&ixlib=rb-4.0.3"},
@@ -21,7 +22,7 @@ function Testimonials(){
                         return(
                             <div key={k} className="card w-full bg-base-100 shadow-xl">
                                 <figure className="px-10 pt-10">
-                                    <img className="mask w-20 h-20 mask-circle object-cover" src={t.profilePic} />
+                                <Image src={t.profilePic} className="mask w-20 h-20 mask-circle object-cover"/>
                                 </figure>
                                 <div className="card-body items-center text-center">
                                     <p>{t.text}</p>
