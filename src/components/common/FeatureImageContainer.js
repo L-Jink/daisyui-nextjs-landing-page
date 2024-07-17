@@ -1,5 +1,4 @@
 import { useState } from "react"
-import ShareIcon  from '@heroicons/react/24/outline/ShareIcon'
 import Image from 'next/image'
 
 

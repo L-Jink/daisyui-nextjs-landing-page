@@ -3,24 +3,23 @@
 @import 'tailwindcss/utilities';
 
 
-.compareImg{
+.compareImg {
     height: 300px;
 }
 
-body{
-    color : "#252524" !important;
+body {
+    color: "#252524" !important;
 }
 
 .btn-primary {
-    color : white !important;
+    color: white !important;
 }
 
 .btn-outline:hover {
-    background:  "#16564d"
+    background: "#16564d"
 }
-.menu li > *:not(ul):not(.menu-title):not(details).active{
-    color : white !important;
+
+.menu li>*:not(ul):not(.menu-title):not(details).active {
+    color: white !important;
     background: #e8b333
 }
-
-

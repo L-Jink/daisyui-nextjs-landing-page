@@ -4,11 +4,11 @@ import modalSlice from './modalSlice'
 import leftsidebarSlice from './leftSidebarSlice'
 
 const combinedReducer = {
-  user : userSlice,
-  modal : modalSlice,
-  leftSidebar : leftsidebarSlice,
+  user: userSlice,
+  modal: modalSlice,
+  leftSidebar: leftsidebarSlice,
 }
 
 export default configureStore({
-    reducer: combinedReducer
+  reducer: combinedReducer
 })
