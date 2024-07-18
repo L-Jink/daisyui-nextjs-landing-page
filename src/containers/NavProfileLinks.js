@@ -55,7 +55,7 @@ function NavProfileLinks() {
 
                         <label tabIndex={0} className="btn bg-white md:flex hidden btn-circle  avatar">
                             <div className="w-6 rounded-full">
-                                <Image src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="profile" />
+                                <Image width={assets.mediaSize.imageSize} height={assets.mediaSize.imageSize} src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="profile" />
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact z-20 dropdown-content bg-slate-50 mt-3 p-2 shadow   rounded-box w-52">

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "set PORT=3005 && export PORT=3005 && next start",
     "lint": "next lint"
   },
   "repository": {

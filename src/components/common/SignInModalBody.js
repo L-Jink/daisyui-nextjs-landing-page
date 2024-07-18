@@ -6,6 +6,7 @@ import { MODAL_BODY_TYPES } from '@/utils/globalConstantUtil'
 import { setLoggedIn, setToken } from '@/store/userSlice'
 import analyticsUtil from '@/utils/analyticsUtil'
 import { SIGN_UP_IMAGES } from '@/utils/globalConstantUtil'
+import assets from 'public/res/assets'
 
 function SignInModalBody({ closeModal, extraObject }) {
 
@@ -119,7 +120,7 @@ function SignInModalBody({ closeModal, extraObject }) {
                 <div className='text-center rounded-xl bg-slate-100 '>
                     <div className='mt-10 md:mb-0 mb-10 inline-block'>
                         <span className='font-bold text-2xl'>
-                            <Image src="/media/android-chrome-192x192.png" className="mask inline-block mr-2 mask-circle w-10" />Web Design AI
+                            <Image width={assets.mediaSize.imageSize} height={assets.mediaSize.imageSize} src="/media/android-chrome-192x192.png" className="mask inline-block mr-2 mask-circle w-10" />Web Design AI
                         </span>
                         <div className="carousel   mt-6 w-full">
                             {
@@ -127,7 +128,7 @@ function SignInModalBody({ closeModal, extraObject }) {
                                     return (
                                         <div id={"slide" + (k + 1)} key={k} className="carousel-item relative w-full">
                                             <div className="w-full h-96" >
-                                                <Image src={img.imageUrl} className="w-full object-cover rounded px-6 h-72" />
+                                                <Image width={assets.mediaSize.imageSize} height={assets.mediaSize.imageSize} src={img.imageUrl} className="w-full object-cover rounded px-6 h-72" />
                                             </div>
                                             <div className="  absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0 ">
                                                 <a href={`#slide${k != 0 ? k : 5}`} className="btn btn-circle btn-ghost">❮</a>

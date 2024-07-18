@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Image from 'next/image'
+import assets from "public/res/assets"
 
 
 function FeatureImageContainer({imageUrl}){
@@ -12,10 +13,7 @@ function FeatureImageContainer({imageUrl}){
     
     return(
         <div className="mt-6 ">
-            <Image
-            src={imageUrl}
-            className="  h-5/6 object-contain w-full rounded-lg"
-            />
+            <Image width={assets.mediaSize.imageSize} height={assets.mediaSize.imageSize} src={imageUrl} className="  h-5/6 object-contain w-full rounded-lg"/>
         </div>
     )
     

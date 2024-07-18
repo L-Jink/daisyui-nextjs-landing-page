@@ -14,7 +14,10 @@ Alternatively, run `nvm install` to install the Node.js version if lacking.
 ## Running the application
 
 1. Run `npm install` to install the required dependencies.
-2. Run `npm start` to run the application on http://localhost:3000/
+2. Run `npm start` to run the application on http://localhost:3005/
+
+### Config
+In case the port isn't being set up correctly, amend the `script:start` of `package.json`. [Specify Port](https://www.geeksforgeeks.org/how-to-specify-a-port-to-run-a-create-react-app-based-project/)
 
 ## Re-building the application
 
